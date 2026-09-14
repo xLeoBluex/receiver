@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receber Comunicados - Sala do Futuro</title>
+  <link rel="stylesheet" href="css/receiver.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Partículas de fundo -->
+  <div class="particles" id="particles"></div>
+
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <h1>Comunicados e Avisos</h1>
+      <div class="status-indicator">
+        <div class="status-dot"></div>
+        <span>Conectado e aguardando comunicados...</span>
+      </div>
+    </div>
+
+    <!-- Container dos comunicados -->
+    <div class="comunicados-container">
+      <!-- Estado vazio inicial -->
+      <div class="empty-state" id="emptyState">
+        <div class="icon">📬</div>
+        <h3>Nenhum comunicado ainda</h3>
+        <p>Aguarde! Os comunicados aparecerão aqui.</p>
+      </div>
+      <ul id="listaComunicados">
+      </ul>
+    </div>
+  </div>
+
+  <!-- Toast de notificação -->
+  <div class="notification-toast" id="notificationToast">
+    <span class="notification-icon">🔔</span>
+    <span class="notification-text">Novo comunicado recebido!</span>
+  </div>
+  
+
+  <script src="js/receiver-ui.js"></script>
+  <script type="module" src="js/receiver.js"></script>
+</body>
+</html>
