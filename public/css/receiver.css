@@ -561,7 +561,7 @@ body {
 
 .btn-sender:hover {
   background: linear-gradient(135deg, #667eea, #764ba2);
-  color: white;
+  color: black;
   transform: translateY(-3px);
   box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
 }
